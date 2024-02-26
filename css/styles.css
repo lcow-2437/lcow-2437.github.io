@@ -1,6 +1,5 @@
 body {
     background-color: azure;
-    overflow: hidden;
 }
 
 header {
@@ -44,7 +43,7 @@ nav ul li a:hover {
 
 main img {
     width: 100%;
-    height: auto;
+    height: 120px;
 }
 
 main h1 {
@@ -60,6 +59,7 @@ main p {
 #product-of-the-week {
     text-align: center;
     margin-bottom: 10px;
+    border-bottom: 1px solid #333;
 }
 
 .product {
@@ -79,6 +79,7 @@ main p {
 #weekly-special {
     text-align: center;
     margin-bottom: 10px;
+    border-bottom: 1px solid #333;
 }
 
 #weekly-special .product {
@@ -100,6 +101,7 @@ main p {
 #customer-guarantee {
     text-align: center;
     margin-bottom: 10px;
+    border-bottom: 1px solid #333;
 }
 
 #customer-guarantee p {
