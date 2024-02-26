@@ -54,6 +54,7 @@ main h1 {
 main p {
     font-family: Verdana, Arial, sans-serif;
     font-size: 0.75em;
+    padding-bottom: 6em;
 }
 
 #product-of-the-week {
