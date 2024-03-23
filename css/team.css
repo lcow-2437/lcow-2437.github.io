@@ -1,0 +1,89 @@
+article, aside, section, h2, p {
+    margin-bottom: 0%;
+}
+
+.grid h1, h2 {
+    text-align:center;
+    text-decoration: underline;
+}
+
+.grid p {
+    font-style: italic;
+    padding-bottom: 0%;
+}
+
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+    position: center;
+}
+
+.team-members {
+    margin-top: 2em;
+}
+
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile */
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablet */
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 725px) {
+    /* Styles for desktop */
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .team-members {
+        display: flex; /* Use flexbox to align items in a row */
+        flex-wrap: nowrap; /* Prevent wrapping to keep items in one line */
+        overflow-x: auto; /* Add horizontal scroll if necessary */
+        justify-content: space-evenly;
+    }
+    
+    .team-members figure {
+        margin-right: 20px; /* Add spacing between each team member */
+    }
+    
+    .team-members img {
+        max-width: 100px; /* Limit the width of the images */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .team-members figcaption {
+        text-align: center; /* Center the caption */
+    }
+    
+
+    
+
+    
+}
