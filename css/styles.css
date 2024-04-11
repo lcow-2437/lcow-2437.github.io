@@ -1,214 +1,236 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    background-color: azure;
+  background-color: azure;
 }
 
-header {
-    background-color: #fff;
-    float: left;
+.nav-container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 img {
-    width: 60px;
-    height: auto;
+  width: 60px;
+  height: auto;
 }
-
 nav {
-    padding-top: 1.5em;
-    padding-right: 1em;
-    float: right;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #a5f1b0;
+main {
+  padding: 0;
 }
 
 main img {
-    width: 100%;
-    height: 120px;
+  width: 100%;
+  height: 120px;
 }
 
 main h1 {
-    padding: none;
-    color: rgb(244, 14, 14);
+  padding: none;
+  color: rgb(244, 14, 14);
+  text-align: center;
+  font-weight: 800;
 }
 
 main p {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 0.75em;
-    padding-bottom: 6em;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 0.75em;
+  padding-bottom: 6em;
+  text-align: center;
+  padding: 0 40px;
+  line-height: 20px;
 }
 
 #product-of-the-week {
-    text-align: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #333;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
 }
 
 .product {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .product img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #333;
+  width: 200px;
+  height: auto;
+  border: 1px solid #333;
 }
 .product p {
-    text-align: left;
-    font-size: 0.75em;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  margin-top: 40px;
+}
+
+#banner img {
+  width: 100%;
+  height: 300px;
 }
 
 /* Weekly Special Styles */
 #weekly-special {
-    text-align: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #333;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
 }
 
 #weekly-special .product {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #weekly-special .product img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #333;
+  width: 200px;
+  height: auto;
+  border: 1px solid #333;
 }
 
 #weekly-special .product p {
-    text-align: left;
-    font-size: 0.75em;
+  text-align: left;
+  font-size: 0.75em;
 }
 
 /* Customer Guarantee Styles */
 #customer-guarantee {
-    text-align: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #333;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
 }
 
 #customer-guarantee p {
-    text-align: left;
-    font-size: 0.75em;
-
+  text-align: left;
+  font-size: 0.75em;
 }
 
 #customer-guarantee img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #333;
+  width: 200px;
+  height: auto;
+  border: 1px solid #333;
 }
 
 #customer-guarantee strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Reasons to Buy Styles */
 #reasons-to-buy {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #reasons-to-buy ul {
-    text-align: left;
+  text-align: left;
 }
 
 #reasons-to-buy ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
+.hamburger-icon {
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+}
+.nav-links-opened {
+  display: none;
+}
 /* Media queries for different viewports */
 /* Styles for mobile */
 @media only screen and (max-width: 600px) {
-    header {
-        float: none;
-    }
-    nav {
-        padding: 1%;
-        margin-bottom: 1%;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-    
-    nav li {
-        font-size: 1.5em;
-        font-family: "Francois One", sans-serif;
-        border-top: 1px solid #fff;
-    }
-    
-    nav li:first-child {
-        border-top: none;
-    }
-    
-    nav li a {
-        display: block;
-        color: #eee6e6;
-        padding: 0.5em 1em;
-        text-decoration: none;
-    }
+  .hamburger-icon {
+    display: block;
+  }
+  header {
+    float: none;
+  }
+  nav {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .nav-links-opened {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    display: none;
+  }
+
+  nav li {
+    font-size: 1.5em;
+    font-family: "Francois One", sans-serif;
+    border-top: 1px solid #fff;
+  }
+
+  nav li:first-child {
+    border-top: none;
+  }
+
+  nav li a {
+    display: block;
+    color: #eee6e6;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
 }
 
 /* Styles for tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    header {
-        float: left;
-    }
-    nav {
-        float: right;
-        padding-top: 1em;
-        padding-right: 1em;
-    }
+  header {
+    float: left;
+  }
+  nav {
+    float: right;
+    padding-top: 1em;
+    padding-right: 1em;
+  }
 }
 
 /* Styles for desktop */
 @media only screen and (min-width: 1025px) {
-    header {
-        float: left;
-    }
-    nav {
-        float: right;
-        padding-top: 1.5em;
-        padding-right: 1em;
-    }
+  header {
+    float: left;
+  }
+  nav {
+    float: right;
+    padding-top: 1.5em;
+    padding-right: 1em;
+  }
 }
 
 /* Style pseudo-classes for navigation links */
 a:link,
 a:visited {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: #666;
-    text-decoration: underline;
+  color: #666;
+  text-decoration: underline;
 }
 
-
 footer {
-    text-align: center;
-    font-size: 0.75em;
-    border-top: 1px solid;
+  text-align: center;
+  font-size: 0.75em;
+  border-top: 1px solid;
 }
