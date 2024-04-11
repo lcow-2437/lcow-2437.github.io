@@ -136,24 +136,60 @@ main p {
 }
 
 /* Media queries for different viewports */
+/* Styles for mobile */
 @media only screen and (max-width: 600px) {
-    /* Styles for mobile */
-    .tablet, .desktop {
-        display: none;
+    header {
+        float: none;
+    }
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+        font-family: "Francois One", sans-serif;
+        border-top: 1px solid #fff;
+    }
+    
+    nav li:first-child {
+        border-top: none;
+    }
+    
+    nav li a {
+        display: block;
+        color: #eee6e6;
+        padding: 0.5em 1em;
+        text-decoration: none;
     }
 }
 
+/* Styles for tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Styles for tablet */
-    .mobile, .desktop {
-        display: none;
+    header {
+        float: left;
+    }
+    nav {
+        float: right;
+        padding-top: 1em;
+        padding-right: 1em;
     }
 }
 
+/* Styles for desktop */
 @media only screen and (min-width: 1025px) {
-    /* Styles for desktop */
-    .mobile, .tablet {
-        display: none;
+    header {
+        float: left;
+    }
+    nav {
+        float: right;
+        padding-top: 1.5em;
+        padding-right: 1em;
     }
 }
 
