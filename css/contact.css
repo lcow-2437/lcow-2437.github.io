@@ -91,3 +91,18 @@ button[type="submit"] {
 button[type="reset"] {
     background-color: #dc3545;
 }
+@media only screen and (max-width: 768px) {
+    #map-wrapper {
+        border: 2px solid #000;
+        width: 200px;
+        margin: auto;
+        height: 200px;
+    }
+    
+    .map {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  }
