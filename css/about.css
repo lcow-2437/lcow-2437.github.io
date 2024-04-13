@@ -1,6 +1,5 @@
 body {
   background-color: azure;
-  width: calc(100% - 28px);
 }
 
 header {
@@ -150,6 +149,7 @@ ol {
 }
 
 main p {
+  text-align: left;
   padding-bottom: 0%;
   margin-bottom: 0;
 }
